@@ -3,11 +3,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!--<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <title>Document</title>
 </head>
 <body>
-    <h1 class="text-red-300">Hello World!</h1>
+    <header class="">
+        <div class="container">
+        <div class="heading">
+            <div class="logo">
+                <h1 class="">Air</h1>
+            </div>
+            <nav >
+                <ul id="drawer">
+                    <li>
+                        <a class="menu" href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">WORK</a>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="hire">
+                <h1><a class="" href="#">HIRE US</a></h1>
+            </div>
+        </div>
+        <main class="gamburgerBtn">
+            <a id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+                </svg>
+            </a>
+        </main>
+    </div>
+    </header>
+    <script src="app.js"></script>
 </body>
 </html>
