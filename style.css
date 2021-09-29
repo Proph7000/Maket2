@@ -11,6 +11,10 @@ header {
     margin: 0 auto;
 }
 
+.gamburgerBtn {
+    visibility: hidden;
+}
+
 .heading, nav ul {
     display: flex;
     flex-flow: row nowrap;
@@ -117,14 +121,32 @@ nav ul li:nth-of-type(1n+2) {
         transform: translate(0, 0);
     }
     
-    #menu {
-        position: fixed;
-        top: 12px;
+    #gamburgerBtn {
+        position: absolute;
+        top: 22px;
         left: 20px;
         visibility: visible;
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 35px;
     }
+
+    .b1, .b2, .b3 {
+        width: 36px;
+        height: 5px;
+        background-color: #fff;
+        margin: 5px 0;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .change .b1 {
+        transform: rotate(-45deg) translate(-6px, 7px);
+    }
+    .change .b3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .change .b2 {opacity: 0;}
 }
 
