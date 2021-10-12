@@ -175,17 +175,6 @@ nav ul li:nth-of-type(1n+2) {
     display: inline-block;
 }
 
-.slides {
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    right: 0px;
-    top: 140px;
-    width: 667px;
-    height: 660px;
-    background: url(img/Photo.png) no-repeat center top/cover;
-}
-
 .intro h1 {
     padding-top: 27%;
     padding-bottom: 32px;
@@ -215,7 +204,6 @@ nav ul li:nth-of-type(1n+2) {
 	width: 226px;
 	padding: 14px 0;
 	margin-top: 83px;
-	/*margin-top: 50px;*/
 }
 
 .show a {
@@ -226,16 +214,77 @@ nav ul li:nth-of-type(1n+2) {
     line-height: 22px;
 }
 
-.arrowBtn {
-    padding-left: 48px;
-    padding-bottom: 66px;
+/*Slider*/
+
+.slides {
+    position: absolute;
+    right: 0px;
+    top: 140px;
+    width: 667px;
+    height: 660px;
+}
+
+.slides, .back-img {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    /* Устанавливаем и изменяем степень прозрачности: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.controls, .quote {
+    position: absolute;
+}
+
+.controls {
+    bottom: 60px;
+    left: 48px;
 }
 
 .quote {
-    padding-left: 24px;
-    padding-bottom: 48px;
+    left: 144px;
+    bottom: 48px;
 }
 
-.arrowRight {
-    padding-left: 8px;
+.left-button, .right-button {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 0;
 }
+
+.back-img {
+    background: no-repeat center top/cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px 0 30px 0;
+  }
+
+  .quote p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .quote h4 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
