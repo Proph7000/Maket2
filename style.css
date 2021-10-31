@@ -248,6 +248,14 @@ nav ul li:nth-of-type(1n+2) {
     left: 48px;
 }
 
+.controls>button:hover {
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(34, 60, 80, 0.49);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(34, 60, 80, 0.49);
+    box-shadow: 0px 0px 15px 2px rgba(34, 60, 80, 0.49);
+    background-color: rgb(207, 206, 206);
+    transition: 0.5s;
+}
+
 .quote {
     left: 144px;
     bottom: 48px;
@@ -262,6 +270,7 @@ nav ul li:nth-of-type(1n+2) {
     height: 32px;
     border-radius: 16px;
     border: 0;
+    transition: 0.5s;
 }
 
 .back-img {
