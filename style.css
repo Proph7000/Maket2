@@ -89,6 +89,10 @@ nav ul li:nth-of-type(1n+2) {
     display: inline-block;
 }
 
+.intro>p {
+    width: 382px;
+}
+
 .intro h1 {
     padding-top: 27%;
     padding-bottom: 32px;
@@ -257,7 +261,7 @@ nav ul li:nth-of-type(1n+2) {
 .expertise>.container>div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -334,13 +338,23 @@ nav ul li:nth-of-type(1n+2) {
     }
 }
 
-@media screen and (max-width: 931px) {
+@media screen and (max-width: 948px) {
     .expertise_child>p {
         margin-bottom: 34px;
     }
     .expertise_child>h4 {
         margin-top: 15px;
     }
+    .intro>p {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 931px) {
+    .expertise>.container>div {
+        justify-content: space-around;
+    }
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -364,10 +378,11 @@ nav ul li:nth-of-type(1n+2) {
     header {
         height: 500px;
     }
+    
     .intro h1 {
         font-size: 40px;
         line-height: 45px;
-        padding-top: 0%;
+        padding-top: 10%;
     }
     .show {
         margin-top: 35px;
@@ -376,6 +391,36 @@ nav ul li:nth-of-type(1n+2) {
         width: 160px;
         bottom: 39px;
     }
+}
+
+@media screen and (max-width: 704px) {
+    .slides {
+        display: none;
+    }
+    .intro>p {
+        width: 382px;
+        text-align: center;
+    }
+    .show {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro {
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        display: block;
+    }
+    .intro>h1 {
+        text-align: center;
+    }
+    .heading {
+        height: 40px;
+    }
+    header {
+        height: 400px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -389,12 +434,39 @@ nav ul li:nth-of-type(1n+2) {
         padding-right: 10px;
     }
 
+    #about h1 {
+        margin-top: 20px;
+    }
+
+    #about p {
+        margin-bottom: 20px;
+    }
+
+    .expertise>div>h1 {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .intro>h1 {
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .heading {
+        height: 40px;
+    }
+
+    header {
+        height: 350px;
+    }
+
     .hire, .logo {
         visibility: hidden;
     }
 
     li a {
         font-size: 16px;
+        padding-bottom: 0.5em;
     }
 
     nav ul {
@@ -445,4 +517,17 @@ nav ul li:nth-of-type(1n+2) {
     }
 
     .change .b2 {opacity: 0;}
+
+    #header, #title {
+        transition: 0.5s;
+    }
+
+    #header.open1 {
+        height: 540px;
+        transition: 0.5s;
+    }
+    #title.open2 {
+        margin-top: 200px;
+        transition: 0.5s;
+    }
 }
