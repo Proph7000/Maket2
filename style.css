@@ -318,6 +318,139 @@ nav ul li:nth-of-type(1n+2) {
     margin-bottom: 134px;
 }
 
+#process {
+    display: flex;
+}
+
+.right_half {
+    display: flex;
+}
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    border: 0;
+    transition: 0.5s;
+    background-color: #2060F6;
+    padding: 12px;
+    margin: 32px 28px 32px 32px;
+}
+
+.arrow:hover {
+    border-radius: 24px;
+    padding: 16px;
+    margin: 28px 24px 28px 28px;
+}
+
+.arrow>img {
+    display: block;
+    margin: auto;
+    
+}
+
+.arrow_link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.arrow_link a {
+    display: inline-block;
+    color: #334563;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.b001>span {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    width: 46px;
+    height: 24px;
+    left: 847px;
+    color: #2060F6;
+    border-radius: 23px;
+    text-align: center;
+    background-color: #E5E5E5;;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 0 0 24px 32px;
+}
+
+.b001>p {
+    width: 200px;
+    height: 80px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    color: #6C788B;
+    margin-left: 32px;
+}
+
+.b001 {
+    border-radius: 16px;
+    background-color: #fff;
+    
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.b003_004 {
+    padding-top: 148px;
+}
+
+.b001_002 {
+    padding-top: 280px;
+    margin-right: 30px;
+}
+
+.left_half {
+    width: 36vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1242px) {
     .slides {
         width: 467px;
@@ -398,8 +531,9 @@ nav ul li:nth-of-type(1n+2) {
         display: none;
     }
     .intro>p {
-        width: 382px;
+        width: 350px;
         text-align: center;
+        font-size: 16px;
     }
     .show {
         margin-left: auto;
