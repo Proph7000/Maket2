@@ -33,10 +33,16 @@ header {
 
 .heading {
     align-items: start;
-    padding-top: 50px;
-    width: 100%;
+    padding-top: 0 14% 0 14%;
+    width:100%;
+    left: 0;
+    top: 0;
+    
     height: 100px;
-    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    background-color: #2C2C2C;
+    z-index: 1;
 }
 
 nav {
@@ -56,7 +62,10 @@ li, a {
     flex: 10;
     font-size:35px;
     font-weight: 400;
+    padding-left: 14%;
 }
+
+
 
 li a, .hire {
     
@@ -70,6 +79,10 @@ li a, .hire {
     display: inline-block;
 	padding: 1em 0;
 	color: #fff;
+}
+
+.hire {
+    padding-right: 14%;
 }
 
 .border {
@@ -94,7 +107,7 @@ nav ul li:nth-of-type(1n+2) {
 }
 
 .intro h1 {
-    padding-top: 27%;
+    padding-top: 240px;
     padding-bottom: 32px;
     font-style: normal;
     font-weight: 600;
@@ -466,9 +479,9 @@ nav ul li:nth-of-type(1n+2) {
         max-width: 85%;
         margin: 0 auto;
     }
-    .heading {
+    /*.heading {
         padding-top: 25px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 948px) {
@@ -588,6 +601,7 @@ nav ul li:nth-of-type(1n+2) {
 
     .heading {
         height: 40px;
+        position: static;
     }
 
     header {
@@ -606,41 +620,54 @@ nav ul li:nth-of-type(1n+2) {
     nav ul {
         display: block;
         flex-flow: column wrap;
-        width: 300px;
-        margin-left: 20px;
-        position: absolute;
-        top: 3px;
-        -webkit-transform: translate(-300px, 0);
-        transform: translate(-500px, 0);
+        width: 200px;
+        position: fixed;
+        top: 15px;
+        -webkit-transform: translate(-400px, 0);
+        transform: translate(-400px, 0);
         transition: transform 0.3s ease;
+        background-color: #2C2C2C;
+        border-radius: 5px;
+        border: 1px solid #E5E5E5;
     }
     
     nav ul li:nth-of-type(1n+2) {
         margin-left: 0;
     }
 
+    nav ul li {
+        padding-left: 22px;
+    }
+
     nav ul.open {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
+        -webkit-transform: translate(-80px, 0);
+        transform: translate(-80px, 0);
     }
     
     #gamburgerBtn {
-        position: absolute;
-        top: 22px;
-        left: 20px;
+        position: fixed;
+        top: 15px;
+        right: 20px;
         visibility: visible;
         display: block;
-        width: 40px;
-        height: 35px;
+        width: 60px;
+        height: 50px;
+        background-color: #2C2C2C;
+        border-radius: 5px;
+        border: 1px solid #E5E5E5;
     }
 
     .b1, .b2, .b3 {
         width: 36px;
         height: 5px;
         background-color: #fff;
-        margin: 5px 0;
+        margin: 5px auto;
         border-radius: 5px;
         transition: 0.3s;
+    }
+
+    .b1 {
+        margin-top: 13px;
     }
 
     .change .b1 {

@@ -1,7 +1,7 @@
 gamburgerBtn.addEventListener('click', function(e) {
     drawer.classList.toggle('open');
-    header.classList.toggle('open1');
-    title.classList.toggle('open2');
+    //header.classList.toggle('open1');
+    //title.classList.toggle('open2');
     e.stopPropagation();
   });
 
@@ -52,3 +52,4 @@ function showSlides(n) {
     
     slides[slideIndex - 1].style.display = "block";    
 }
+
