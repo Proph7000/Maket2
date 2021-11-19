@@ -409,16 +409,18 @@ nav ul li:nth-of-type(1n+2) {
 }
 
 .b001_002 {
-    padding-top: 280px;
+    position: relative;
+    top: 280px;
     margin-right: 30px;
+    z-index: 1;
 }
 
-.left_half {
+#process>.left_half {
     width: 36vw;
     margin-top: 251px;
 }
 
-.left_half>span {
+#process>.left_half>span {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -430,6 +432,90 @@ nav ul li:nth-of-type(1n+2) {
     color: #C0CDD7;
 }
 
+#process>.left_half>h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #253757;
+    margin-top: 16px;
+}
+
+#process>.left_half>p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #6C788B;
+    margin-top: 24px;
+}
+
+#approach {
+    background-color: #2C2C2C;
+    position: relative;
+    /*left: 121px;*/
+    border-radius: 30px 0 0 30px;
+    color: #fff;
+    padding-top: 204px;
+    padding-bottom: 204px;
+    width: 92vw;
+    float: right;
+}
+
+#approach>.container>.left_half>span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#approach h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 362px;
+}
+
+.unit {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-bottom: 64px;;
+}
+
+.unit>p {
+    width: 264px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.left_half>.unit:last-child {
+    margin-bottom: 0;
+}
+
+#approach>.container>.right_half {
+    background: url('img/Photo\ \(1\).png') no-repeat center top/cover;
+    width: 667px;
+    height: 660px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
 
 
 
@@ -457,13 +543,16 @@ nav ul li:nth-of-type(1n+2) {
 
 
 
-
-
-
-
-
-
-
+@media screen and (max-width: 1350px) {
+    #approach>.container>.right_half {
+        width: 567px;
+        height: 560px;
+    }
+    #approach {
+        padding-top: 104px;
+        padding-bottom: 104px;
+    }
+}
 
 @media screen and (max-width: 1242px) {
     .slides {
@@ -518,7 +607,7 @@ nav ul li:nth-of-type(1n+2) {
     nav ul li:nth-of-type(1n+2) {
         margin-left: 16px;
     }
-    .slides {
+    .slides, #approach>.container>.right_half {
         width: 367px;
         height: 360px;
     }
@@ -541,7 +630,7 @@ nav ul li:nth-of-type(1n+2) {
 }
 
 @media screen and (max-width: 704px) {
-    .slides {
+    .slides, #approach>.container>.right_half {
         display: none;
     }
     .intro>p {
