@@ -514,8 +514,14 @@ nav ul li:nth-of-type(1n+2) {
     position: absolute;
     bottom: 0;
     right: 0;
-    
 }
+
+.unit>img {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+
 
 
 
